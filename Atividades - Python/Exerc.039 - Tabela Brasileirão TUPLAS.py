@@ -1,0 +1,6 @@
+tabelabr = ('Atlético MG', 'Palmeiras', 'Fortaleza', 'Bragantino', 'Flamengo', 'Corinthians', 'Atlético GO', 'Ceará SC', 'Athletico PR', 'International', 'Fluminense', 'Santos', 'São Paulo', 'Juventude', 'Cuiabá', 'Bahia', 'América MG', 'Grêmio', 'Sport RE', 'Chapecoense')
+tabela = tabelabr.index('Chapecoense')
+print(f'Os 5 primeiros colocados do Brasileirão são {tabelabr[0:5]}')
+print(f'Os 4 últimos colocados são {tabelabr[-5:-1]}')
+print(f'A tabela em ordem alfabética: {sorted(tabelabr)}')
+print(f'A Chapecoense está na posição {tabela+1}')
