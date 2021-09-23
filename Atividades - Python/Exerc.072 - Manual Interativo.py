@@ -15,10 +15,11 @@ def fim(ate, cor=0):
     print(c[1])
     
 def var(msg):
-    print(c[5], '~~~'*15)
-    print(c[5], f'Acessando o manual referente a função: {ajuda}')
-    print(c[5], '~~~'*15)
-    print(c[6])
+    a = f'Acessando o manual referente a função: {ajuda}'
+    tam = len(a) + 4
+    print(c[5], '~'*tam)
+    print(c[5], f'  {a}')
+    print(c[5], '~'*tam)
     sleep(2)
     help(msg)
     print(c[0], end='')
@@ -41,4 +42,3 @@ while True:
     else:
         var(ajuda)
 fim('VOLTE SEMPRE QUE PRECISAR!')
-
