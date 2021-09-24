@@ -30,7 +30,12 @@ def moeda(valor):
     return f'R${valor:>.2f}'.replace('.',',')
 
 def resumo(preço, a, b):
-    print(f'A metade do valor colocado é {metade(preço)}.')
-    print(f'O dobro do valor colocado é {dobro(preço)}.')
-    print(f'Esse valor aumentado em {a}% resulta em {porcentagem(preço, a)}.')
-    print(f'Esse valor reduzido em {b}% resulta em {redução(preço, b)}.')
+    print('='*44)
+    print('RESUMO DOS PREÇOS'.center(44))
+    print('='*44)
+    print(f'Valor da metade: \t\t{metade(preço)}')
+    print(f'Valor do dobro:  \t\t{dobro(preço)}')
+    print(f'Aumenta em {a}%:  \t\t{porcentagem(preço, a)}')
+    print(f'Reduz em {b}%:   \t\t{redução(preço, b)}')
+    print('='*44)
+    print()
