@@ -1,4 +1,5 @@
-from utilidadesmod1 import moeda, dados
+from utilidadesmod1 import moeda
+from utilidadesmod1 import dados
 
 escolha = 'S'    
 while escolha in 'Ss':
