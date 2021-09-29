@@ -1,4 +1,11 @@
-import colorpy, time
+import colorpy
+from time import sleep
+from arquivo import *
+
+arq = 'cadastro.txt'
+
+if not arquivoExiste(arq):
+    criarArquivo(arq)
 
 def menu(listados):
     c = 1
@@ -17,15 +24,16 @@ def list(valor):
             op = int(input(valor))
             if op == 1:
                 print('-'*50)
-                print(' '*20, 'OPÇÃO 1')
+                print(' '*14, 'Pessoas Cadastradas')
                 print('-'*50)
+                lerArquivo(arq)
             elif op == 2:
                 print('-'*50)
-                print(' '*20, 'OPÇÃO 2')
+                print(' '*12, 'Cadastrar Nova Pessoa')
                 print('-'*50)
             elif op == 3:
                 print('Saindo...')
-                time.sleep(1.5)
+                sleep(1.5)
                 print('Volte Sempre!')
                 break
             elif op > 3:
