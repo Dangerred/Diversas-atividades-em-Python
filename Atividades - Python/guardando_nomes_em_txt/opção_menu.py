@@ -31,6 +31,9 @@ def list(valor):
                 print('-'*50)
                 print(' '*12, 'Cadastrar Nova Pessoa')
                 print('-'*50)
+                adnome = str(input('Nome: '))
+                adid = input('Idade: ')
+                nomeid(arq, adnome, adid)
             elif op == 3:
                 print('Saindo...')
                 sleep(1.5)
